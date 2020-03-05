@@ -1,7 +1,6 @@
 <!doctype html>
 <html {!! get_language_attributes() !!}>
   @include('partials.head')
-  <link rel="stylesheet" type="text/css" href="app/themes/jspn-theme/resources/assets/styles/front.css" />
   <body @php body_class() @endphp>
     @php do_action('get_header') @endphp
     <div id="ip-container" class="ip-container">
@@ -22,9 +21,7 @@
     @php do_action('get_footer') @endphp
     @include('partials.footer')
     @php wp_footer() @endphp
-    <script src="app/themes/jspn-theme/resources/assets/scripts/swiper.min.js" async></script>
+    <script src="app/themes/jspn-theme/resources/assets/scripts/swiper.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
-{{--  <script src="app/themes/jspn-theme/resources/assets/scripts/dynamics.min.js"></script>
-  <script src="app/themes/jspn-theme/resources/assets/scripts/portfolio.js"></script>--}}
   </body>
 </html>

@@ -1,7 +1,6 @@
 export default {
- /* eslint-disable no-unused-vars */
   init() {
-        var swiper = new Swiper('.portfolio-slider', {// eslint-disable-line
+        var swiper = new Swiper('.portfolio-slider', {
         spaceBetween: 30,
         effect: 'fade',
         loop: true,
