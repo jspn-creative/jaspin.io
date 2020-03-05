@@ -32,8 +32,10 @@ module.exports = {
     ],
   },
   'rules': {
+    'no-undef': ['off'],
+    'no-unused-vars': ['off'],
     'no-console': 0,
-    'quotes': ['error', 'single'],
+    'quotes': ['off'],
     'comma-dangle': [
       'error',
       {
