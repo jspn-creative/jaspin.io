@@ -1,0 +1,13 @@
+.btn--dark {
+  @apply bg-gray-800 text-gray-300 py-2 px-4 rounded-sm leading-none;
+
+  transition: 0.2s ease;
+
+  &:hover {
+    @apply bg-gray-900;
+  }
+}
+
+button:focus {
+  outline: 2px auto #645884;
+}

@@ -1,0 +1,8 @@
+path: web/wp
+
+@development:
+  ssh: vagrant@jaspin.test/srv/www/jaspin.io/current
+@staging:
+  ssh: web@staging.jaspin.io/srv/www/jaspin.io/current
+@production:
+  ssh: web@jaspin.io/srv/www/jaspin.io/current

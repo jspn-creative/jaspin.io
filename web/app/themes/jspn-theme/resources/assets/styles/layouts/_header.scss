@@ -1,0 +1,26 @@
+.hover-opacity-100:hover {
+  opacity: 1;
+}
+
+html,
+body {
+  background-image: linear-gradient(240deg, #343434, #181818);
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  opacity: 1;
+  cursor: default;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.header__svg {
+  width: 100vw;
+}
+
+.header__text {
+  font-size: 3em;
+  fill: #fff;
+}

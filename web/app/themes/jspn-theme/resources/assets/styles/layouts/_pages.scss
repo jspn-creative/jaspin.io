@@ -1,0 +1,40 @@
+
+ul.check-li {
+  list-style: none;
+}
+
+ul.check-li > li {
+  clear: left;
+}
+
+ul.check-li > li::before {
+  content: "\2713\0020";
+  text-align: center;
+  font-size: 1em;
+  line-height: 2em;
+  height: 2em;
+  width: 2em;
+  display: block;
+  float: left;
+  margin-left: -3.75em;
+  margin-top: 0.2em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 90%;
+  opacity: 0.25;
+  color: #fff;
+  background-image: url("data:image/svg+xml;utf8,<svg class='thing' xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 37 37'><path d='M14 0h21a2 2 0 0 1 2 2v21a14 14 0 0 1-14 14H2a2 2 0 0 1-2-2V14A14 14 0 0 1 14 0z' fill='%23323131'/></svg>");
+  transition: background-size 0.3s;
+}
+
+ul.check-li > li.feat-li::before {
+  color: #fff;
+  background-image: url("data:image/svg+xml;utf8,<svg class='thing' xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 37 37'><path d='M14 0h21a2 2 0 0 1 2 2v21a14 14 0 0 1-14 14H2a2 2 0 0 1-2-2V14A14 14 0 0 1 14 0z' fill='%231f1e1e'/></svg>");
+  background-size: 90%;
+  background-position: center;
+  transition: background-size 0.2s ease-out;
+}
+
+ul.check-li > li:hover::before {
+  background-size: 100%;
+}

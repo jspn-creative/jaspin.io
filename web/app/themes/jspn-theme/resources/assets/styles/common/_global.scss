@@ -1,0 +1,85 @@
+/*
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply mb-2 leading-tight;
+}
+
+p {
+  @apply mb-3 leading-normal;
+}
+
+a {
+  @apply text-primary no-underline border-b border-transparent;
+
+  transition: 0.2s ease;
+
+  &:hover {
+    @apply border-primary;
+  }
+}
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:100,700|Rajdhani:400,600,700&display=swap");
+
+.heading {
+  @apply tracking-wide;
+
+  & span {
+    font-size: 40%;
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase;
+    opacity: 0.8;
+  }
+}
+
+textarea,
+select,
+input,
+button { outline: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply mb-2 leading-tight;
+
+  font-family: "Rajdhani", sans-serif;
+}
+
+p {
+  @apply mb-3 leading-normal text-xs;
+
+  font-family: "Roboto Mono", sans-serif;
+}
+
+p.alt-font,
+button {
+  font-family: "Rajdhani", sans-serif;
+}
+
+a {
+  @apply no-underline border-none border-transparent;
+
+  transition: 0.2s ease;
+
+  &:hover {
+    @apply border-none opacity-75;
+  }
+}
+
+*,
+*::before,
+*::after {
+  border-color: #fff;
+}
+
+.animated {
+  transition: all 1s;
+}

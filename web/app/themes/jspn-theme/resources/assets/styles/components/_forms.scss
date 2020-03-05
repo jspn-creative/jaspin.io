@@ -1,0 +1,105 @@
+/** Search form */
+.search-form {
+  @apply flex items-center;
+}
+
+.search-form label {
+  @apply mb-4;
+
+  font-weight: normal;
+}
+
+.search-form .search-field {
+  @apply block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-700 border border-gray-500 rounded;
+}
+
+.search-form .search-submit {
+  @apply inline-block align-middle text-center select-none border font-normal whitespace-no-wrap py-2 px-4 rounded text-base leading-normal no-underline text-gray-100 bg-gray-500;
+
+  &:hover {
+    @apply bg-gray-400;
+  }
+}
+
+/** Ninja forms */
+.nf-form-errors .nf-error-msg {
+  color: #692828;
+  text-align: center;
+}
+
+.nf-error.field-wrap .nf-field-element::after {
+  background: #692828 !important;
+}
+
+.nf-field .nf-error .ninja-forms-field {
+  border-color: #692828 !important;
+}
+
+span.ninja-forms-req-symbol {
+  display: none;
+}
+
+.nf-form-wrap .nf-form-content .list-select-wrap .nf-field-element > div,
+.nf-form-wrap .nf-form-content input:not([type=button]),
+.nf-form-wrap .nf-form-content textarea {
+  @apply bg-gray-700 text-gray-200;
+
+  border-radius: 2px;
+  box-shadow: none;
+  border: 1px solid #565656;
+  transition: all 0.5s;
+
+  &:focus {
+    @apply bg-gray-600;
+  }
+}
+
+/** div.nf-form-content */
+#contactForm {
+  @apply p-0 mt-8;
+}
+
+.nf-form-fields-required,
+.nf-error-wrap {
+  display: none;
+}
+
+div.nf-field-container {
+  margin-bottom: 10px;
+}
+
+.label-above .nf-field-label {
+  display: none;
+}
+
+.nf-form-content .nf-field-element input[type=button] {
+  @apply btn--dark py-2 px-4 rounded-sm leading-none w-full;
+
+  font-family: "Rajdhani", sans-serif;
+}
+
+.nf-form-content .nf-field-element input[type=button]:hover {
+  @apply bg-gray-900;
+}
+
+.nf-field-element {
+  font-family: "Rajdhani", sans-serif;
+}
+
+.nf-response-msg {
+  @apply bg-gray-800 p-10 text-center text-white;
+
+  /** color: white;
+  text-align: center;
+  background: #3e3e3e;
+  padding: 2rem; */
+}
+
+@screen xl {
+  .nf-form-cont {
+    @apply mx-auto;
+
+    padding-right: 8rem;
+    padding-left: 8rem;
+  }
+}
