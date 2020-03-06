@@ -1,0 +1,21 @@
+.grid {
+  @apply flex w-full mx-auto mb-10;
+
+  &__container {
+    @apply text-gray-100 flex flex-col justify-center text-center;
+  }
+
+  &__items {
+    @apply flex flex-wrap -mx-2 overflow-hidden text-center z-10;
+  }
+
+  &__item-container {
+    @apply my-2 px-2 w-full overflow-hidden flex flex-col;
+  }
+
+  &__item {
+    @apply p-6 bg-gray-800 opacity-50 flex-1 rounded-tl rounded-br rounded-bl-xl rounded-tr-xl;
+
+    &:hover { @apply opacity-100; }
+  }
+}

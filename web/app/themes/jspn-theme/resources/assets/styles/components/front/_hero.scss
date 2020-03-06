@@ -1,0 +1,28 @@
+.hero-section {
+  @apply flex w-full mx-auto pt-20;
+
+  &__bg {
+    right: 9%;
+    top: -11%;
+
+    @apply absolute;
+  }
+
+  &__content {
+    @apply w-full flex flex-wrap justify-center text-center z-10;
+  }
+
+  &__column-one {
+    @apply flex overflow-visible;
+  }
+
+  &__column-two {
+    @apply flex flex-col z-10 self-center;
+  }
+
+  &__two {
+    h2 { @apply leading-none text-3xl; }
+
+    p { @apply mt-4 mb-12; }
+  }
+}

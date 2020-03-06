@@ -1,10 +1,9 @@
 
 {{-- #checks --}} {{----–-----–-----–-----–-----–-----–-----–-----–-----}}
-  <section class="flex w-full mx-auto mb-16 mt-32">
-    <div class="w-full text-gray-100 flex justify-center lg:justify-start text-left">
+  <section class="check-section">
+    <div class="check-section__wrap lg:justify-start">
 
-      {{-- #col1 --}}
-      <div class="invisible sm:visible lg:w-1/3 lg:justify-left justify-center flex overflow-visible absolute lg:relative z-0 opacity-25 lg:opacity-100">
+      <div class="check-section__column-one sm:visible lg:w-1/3 lg:justify-left lg:relative lg:opacity-100">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384.6 357.5" class="w-full pb-8 lg:pb-0 lg:-mt-12">
           <defs>
             <style>
@@ -47,29 +46,26 @@
           </g>
         </svg>
       </div>
-      {{-- /col1 --}}
 
-      {{-- #col2 --}}
-      <div class="w-2/3 lg:w-1/2 justify-center flex flex-col ml-16 md:ml-24 lg:ml-32 mb-10">
-        <ul class="check-li">
-          <li class="mb-8">
+      <div class="check-section__column-two lg:w-1/2 md:ml-24 lg:ml-32">
+        <ul class="check-section__list check-li">
+          <li class="check-section__li">
             <h3 class="leading-none font-semibold text-xl md:text-2xl">Turn-key websites</h3>
             <p class="">Never deal with nameservers, web hosts, or FTP transfers again-–we take care of everything
               website related so you can run your business.</p>
           </li>
-          <li class="mb-8">
+          <li class="check-section__li">
             <h3 class="leading-none font-semibold text-xl md:text-2xl">Custom-built tools</h3>
             <p class="">Engage your audience with helpful functionality––from full-featured booking forms to interactive
               maps and everything in between!</p>
           </li>
-          <li class="mb-8">
+          <li class="check-section__li">
             <h3 class="leading-none font-semibold text-xl md:text-2xl">Unbeatable performance</h3>
             <p class="">Every Jaspin website is built on a custom virtual private server that's tuned for extreme
               performance under heavy load. </p>
           </li>
         </ul>
       </div>
-      {{-- /col2 --}}
 
     </div>
   </section>

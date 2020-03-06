@@ -1,0 +1,43 @@
+.footer {
+  @apply py-16 w-screen absolute left-0 bg-gray-800 text-gray-100;
+
+  &__wrap {
+    @apply mx-auto flex-col flex;
+  }
+
+  &__column-one {
+    @apply w-full my-8 justify-center flex;
+
+    a {
+      @apply no-underline text-gray-300 self-center;
+    }
+
+    svg {
+      @apply w-48 fill-current;
+    }
+  }
+
+  &__column-two {
+    @apply w-full my-2 text-center;
+
+    h6 {
+      @apply font-bold;
+    }
+
+    p {
+      @apply mt-3;
+    }
+  }
+
+  &__column-three {
+    @apply w-full my-2 text-center;
+
+    h6 {
+      @apply font-bold;
+    }
+
+    a {
+      @apply text-gray-300;
+    }
+  }
+}

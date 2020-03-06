@@ -1,0 +1,19 @@
+.check-section {
+  @apply flex w-full mx-auto mb-16 mt-32;
+
+  &__wrap {
+    @apply w-full text-gray-100 flex justify-center text-left;
+  }
+
+  &__column-one {
+    @apply invisible justify-center flex overflow-visible absolute z-0 opacity-25;
+  }
+
+  &__column-two {
+    @apply w-2/3 justify-center flex flex-col ml-16 mb-10;
+  }
+
+  &__li {
+    @apply mb-8;
+  }
+}

@@ -1,6 +1,5 @@
-{{-- #hero --}} {{----–-----–-----–-----–-----–-----–-----–-----–-----}}
-  <section class="flex w-full mx-auto pt-20 md:pt-32">
-    <svg class="absolute" style="right:9%; top:-11%;" xmlns="http://www.w3.org/2000/svg" width="2000" height="775">
+  <section class="hero-section md:pt-32">
+    <svg class="hero-section__bg" xmlns="http://www.w3.org/2000/svg" width="2000" height="775">
       <defs>
         <linearGradient id="lg" x1="11" y1="741" x2="180" y2="-51" gradientUnits="userSpaceOnUse">
           <stop offset="0" stop-color="#181818"/>
@@ -11,9 +10,9 @@
       <rect width="2000" height="775" rx="387.49961" fill="url(#lg)" opacity=".35"/>
     </svg>
 
-    <div class="w-full flex flex-wrap justify-center md:justify-start text-center md:text-left z-10">
-      {{-- #col1 --}}
-      <div class="w-full md:w-2/5 lg:w-1/2 md:order-last justify-center flex overflow-visible md:mb-20">
+    <div class="hero-section__content md:justify-start md:text-left">
+
+      <div class="hero-section__column-one md:w-2/5 lg:w-1/2 md:order-last md:mb-20">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-4/5 md:w-full" viewBox="0 0 827.95 783.55">
           <defs>
             <style>
@@ -309,16 +308,14 @@
         </svg>
 
       </div>
-      {{-- /col1 --}}
 
-      {{-- #col2 --}}
-      <div class="md:w-3/5 lg:w-1/2 w-full justify-center flex flex-col z-10">
-        <h2 class="leading-none text-3xl md:text-4xl">It’s <?php echo date("Y"); ?>.<br />
+      <div class="hero-section__column-two md:w-3/5 lg:w-1/2">
+        <h2 class="md:text-4xl">It’s <?php echo date("Y"); ?>.<br />
           Everyone has a website.</h2>
-        <p class="mt-4 mb-12">So what makes yours special? What value does it provide? How does it look on a
+        <p>So what makes yours special? What value does it provide? How does it look on a
           phone?<br><br>Is it just a digital business card, or is it something special?</p>
       </div>
-      {{-- /col2 --}}
+
     </div>
+
   </section>
-{{-- /hero --}} {{----–-----–-----–-----–-----–-----–-----–-----–-----}}

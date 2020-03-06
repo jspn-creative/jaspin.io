@@ -17,7 +17,6 @@
     @include('partials.home.integrations')
     @include('partials.home.cta')
     @include('partials.home.footer')
-    @include('partials.home.stripe')
 </main>
 
 <style>

@@ -1,0 +1,27 @@
+.cta-section {
+  @apply py-4 bg-gray-700 -mb-16 flex flex-wrap mt-32 shadow-2xl z-10 relative;
+
+  &__header {
+    @apply px-16 w-full flex-col flex justify-between;
+  }
+
+  &__column-one {
+    @apply w-full mb-2 mr-10 flex justify-center;
+
+    h4 {
+      @apply text-center font-bold self-center text-2xl text-gray-100;
+    }
+  }
+
+  &__column-two {
+    @apply w-full mb-2 flex justify-center;
+  }
+
+  &__btn {
+    @apply self-center;
+  }
+
+  &__form {
+    @apply flex hidden;
+  }
+}

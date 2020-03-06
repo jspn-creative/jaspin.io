@@ -29,25 +29,21 @@ function wq(){
         };
 }
 ?>
-{{-- #cta --}} {{----–-----–-----–-----–-----–-----–-----–-----–-----}}
-  <section id="contact" class="sm:py-8 py-4 bg-gray-700 -mb-16 flex flex-wrap h-36 mt-32 shadow-2xl z-10 relative">
-    <div class="px-16 w-full sm:flex-row flex-col flex justify-between">
 
-      {{-- #col1 --}}
-      <div class="w-full sm:w-1/2 sm:mb-0 mb-2 mr-10 flex justify-center md:justify-left">
-        <h4 class="text-center sm:text-left font-bold self-center text-2xl text-gray-100">Now Booking <?php wq(); ?>.
-        </h4>
-      </div>
-      {{-- /col1 --}}
+  <section class="cta-section h-36 sm:py-8" id="contact">
+    <div class="cta-section__header sm:flex-row">
 
-      {{-- #col2 --}}
-      <div class="w-full sm:w-1/2 sm:mb-0 mb-2 flex justify-center md:justify-right">
-        <button class="btn--dark self-center" id="toggleContact">Let's Talk &#8594;</button>
+      <div class="cta-section__column-one md:justify-left sm:w-1/2 sm:mb-0">
+        <h4 class="sm:text-left">Now Booking <?php wq(); ?>.</h4>
       </div>
-      {{-- /col2 --}}
+
+      <div class="cta-section__column-two md:justify-right sm:w-1/2 sm:mb-0">
+        <button class="cta-section__btn btn--dark" id="toggleContact">Let's Talk &#8594;</button>
+      </div>
+
     </div>
-    <div class="container flex hidden" id="contactForm">
+
+    <div class="cta-section__form container" id="contactForm">
       <?php echo do_shortcode('[ninja_form id=1]'); ?>
     </div>
   </section>
-{{-- /cta --}} {{----–-----–-----–-----–-----–-----–-----–-----–-----}}
